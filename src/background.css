@@ -1,0 +1,5 @@
+.background {
+    background-image: url(./images/pretty_fjord.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
