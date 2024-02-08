@@ -9,55 +9,68 @@
     />
     <title>-_-</title>
   </head>
-  <body class="font-sans">
-    <div class="min-w-max bg-gray-800 py-4">
+  <body class="font-sans pt-10">
+    <div
+      class="min-w-max bg-gray-800 py-4 fixed w-full top-0 z-10 grid sm:grid-cols-2"
+    >
       <ul class="flex justify-stretch">
         <li>
           <a
-            href="about_me.html"
+            href="#about"
             class="text-white hover:bg-gray-700 px-4 py-2 rounded"
             >About</a
           >
         </li>
         <li>
           <a
-            href="carrier.html"
+            href="#career"
             class="text-white hover:bg-gray-700 px-4 py-2 rounded"
-            >Carrier</a
+            >Career</a
           >
         </li>
         <li>
           <a
-            href="skills.html"
+            href="#skill"
             class="text-white hover:bg-gray-700 px-4 py-2 rounded"
             >Skillset</a
           >
         </li>
         <li>
           <a
-            href="projects.html"
+            href="#projects"
             class="text-white hover:bg-gray-700 px-4 py-2 rounded"
             >Projects</a
           >
         </li>
         <li>
           <a
-            href="contact_me.html"
+            href="#contact"
             class="text-white hover:bg-gray-700 px-4 py-2 rounded"
             >Contact</a
           >
         </li>
       </ul>
+      <div class="flex justify-end gap-4 pr-4">
+        <a href="https://github.com/baremikkel" target="_blank">
+          <ion-icon class="text-white text-2xl" name="logo-github"></ion-icon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mikkel-weinreich-olsen-69576822b/"
+          target="_blank"
+        >
+          <ion-icon class="text-white text-2xl" name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
     </div>
-    <div class="container mx-auto px-4 py-8">
+    <div class="max-w-screen-xl mx-auto px-4 py-8">
       <!-------------------------------------------------------->
       <div class="bg-gray-200 rounded-lg p-4 mb-4">
-        <h1 class="text-5xl font-bold mb-2">Hi!</h1>
+        <h1 class="text-4xl font-bold mb-2 underline" id="about">Hi!</h1>
         <p>Hello, my name is Mikkel and I am 22 years old.</p>
       </div>
       <!---------------------Focus------------------------------>
       <div class="bg-gray-200 rounded-lg p-4 mb-4">
-        <h1 class="text-4xl font-bold mb-2 underline">My Career</h1>
+        <h1 class="text-4xl font-bold mb-2 underline" id="career">My Career</h1>
         <div class="grid grid-cols-1 gap-10 sm:grid-cols-2">
           <div>
             <h2 class="text-3xl font-semibold pb-3">Education</h2>
@@ -83,7 +96,7 @@
                 </p>
               </li>
               <li class="pb-2">
-                <h1 class="text-2xl">Efterskole education</h1>
+                <h1 class="text-2xl">Efterskole</h1>
                 <h2 class="text-gray-900 italic font-semibold">
                   Sorø Gymnastikefterskole
                 </h2>
@@ -102,27 +115,87 @@
               </li>
             </ul>
           </div>
+
           <div>
-            <h2 class="font-bold text-4xl">Work Experience</h2>
+            <h2 class="font-semibold text-3xl pb-3">Work Experience</h2>
+            <ul class="list-disc pl-5">
+              <li class="pb-2">
+                <h1 class="text-2xl">Bilka Odense</h1>
+                <p class="italic">2022 &rarr; now</p>
+                <h2 class="text-gray-900 font-semibold">
+                  Seller in their delicacy
+                </h2>
+              </li>
+              <li class="pb-2">
+                <h1 class="text-2xl">DinCamp</h1>
+                <h2 class="text-gray-900 font-semibold">
+                  Gymnastics Instructor
+                </h2>
+                <p class="italic">
+                  Week 31 2023 <br />
+                  Kolding
+                </p>
+                <h2 class="text-gray-900 font-semibold">
+                  Teacher in GameMaker
+                </h2>
+                <p class="italic">
+                  Week 27 2023 <br />
+                  Lunderskov
+                </p>
+              </li>
+              <li class="pb-2">
+                <h1 class="text-2xl">Netto Gørlev</h1>
+                <p class="italic">2018 &rarr; 2021</p>
+                <h2 class="text-gray-900 font-semibold">1. Assistant</h2>
+                <h2 class="text-gray-900 font-semibold">Youth Worker</h2>
+              </li>
+              <li class="pb-2">
+                <h1 class="text-2xl">Høng Gymnastics Association</h1>
+                <p class="italic">2018 &rarr; 2021</p>
+                <h2 class="text-gray-900 font-semibold">Instructor</h2>
+              </li>
+              <li class="pb-2">
+                <h1 class="text-2xl">Mejnerts Landbrug</h1>
+                <p class="italic">2016 &rarr; 2018</p>
+                <h2 class="text-gray-900 font-semibold">Youth Worker</h2>
+              </li>
+              <li class="pb-2">
+                <h1 class="text-2xl">Hvidebæk Sport Association</h1>
+                <p class="italic">2013 &rarr; 2017</p>
+                <h2 class="text-gray-900 font-semibold">Helper</h2>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
       <!-------------------------------------------------------->
       <div class="bg-gray-200 rounded-lg p-4 mb-4">
-        <h1 class="text-5xl font-bold mb-2">Skillset</h1>
+        <h1 class="text-4xl font-bold mb-2 underline" id="skill">Skillset</h1>
         <p>My Skills</p>
       </div>
       <!-------------------------------------------------------->
       <div class="bg-gray-200 rounded-lg p-4 mb-4">
-        <h1 class="text-5xl font-bold mb-2">My Projects</h1>
+        <h1 class="text-4xl font-bold mb-2 underline" id="projects">
+          My Projects
+        </h1>
         <p>My Projects</p>
       </div>
       <!-------------------------------------------------------->
       <div class="bg-gray-200 rounded-lg p-4 mb-4">
-        <h1 class="text-5xl font-bold mb-2">Contact Information</h1>
+        <h1 class="text-4xl font-bold mb-2 underline" id="contact">
+          Contact Information
+        </h1>
         <p>Contact Information</p>
       </div>
       <!-------------------------------------------------------->
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
