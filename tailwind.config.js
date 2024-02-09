@@ -2,8 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      visibility: ["group-hover"],
+    },
   },
   plugins: [],
-  darkMode: 'class'
+  darkMode: "class"
 }
