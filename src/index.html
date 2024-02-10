@@ -69,7 +69,7 @@
         <a href="#contact">
           <div class="h-40 pt-10">
             <p
-              class="italic text-center bg-opacity-70 bg-gray-600 rounded text-gray-300"
+              class="text-center bg-opacity-70 bg-gray-600 rounded text-gray-300"
             >
               Hi! I'm looking for an internship for autumn of 2024!
             </p>
@@ -545,5 +545,18 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+      // Check if dark mode is enabled using matchMedia
+      if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        // Dark mode is enabled
+        console.log("Dark mode is enabled");
+      } else {
+        // Dark mode is not enabled
+        console.log("Dark mode is not enabled");
+      }
+    </script>
   </body>
 </html>
