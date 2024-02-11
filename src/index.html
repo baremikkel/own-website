@@ -12,47 +12,13 @@
   </head>
   <body class="font-sans pt-10">
     <!---------------------------Navbar-------------------------->
-    <div
-      class="min-w-max bg-gray-800 py-4 fixed w-full top-0 grid sm:grid-cols-2 z-20"
-    >
-      <ul class="flex justify-stretch">
-        <li>
-          <a
-            href="#about"
-            class="text-white hover:bg-gray-700 px-4 py-2 rounded"
-            >About</a
-          >
-        </li>
-        <li>
-          <a
-            href="#career"
-            class="text-white hover:bg-gray-700 px-4 py-2 rounded"
-            >Career</a
-          >
-        </li>
-        <li>
-          <a
-            href="#skill"
-            class="text-white hover:bg-gray-700 px-4 py-2 rounded"
-            >Toolbox</a
-          >
-        </li>
-        <li>
-          <a
-            href="#projects"
-            class="text-white hover:bg-gray-700 px-4 py-2 rounded"
-            >Projects</a
-          >
-        </li>
-        <li>
-          <a
-            href="#contact"
-            class="text-white hover:bg-gray-700 px-4 py-2 rounded"
-            >Contact</a
-          >
-        </li>
-      </ul>
-      <div class="flex justify-end gap-4 pr-8">
+    <div class="min-w-max bg-gray-800 py-4 fixed w-full top-0 z-20">
+      <p
+        class="flex text-3xl font-semibold justify-stretch text-white pl-10 float-left"
+      >
+        Mikkel Weinreich Olsen
+      </p>
+      <div class="flex float-right gap-4 pr-8">
         <a href="https://github.com/baremikkel" target="_blank">
           <ion-icon class="text-white text-2xl" name="logo-github"></ion-icon>
         </a>
@@ -179,7 +145,7 @@
                   <h2 class="text-gray-900 font-semibold">Youth Worker</h2>
                 </li>
                 <li class="pb-2">
-                  <h1 class="text-2xl">Hvidebæk Sport Association</h1>
+                  <h1 class="text-2xl">Hvidebæk Sports Association</h1>
                   <p class="italic">2013 &rarr; 2017</p>
                   <h2 class="text-gray-900 font-semibold">Helper</h2>
                 </li>
@@ -193,8 +159,8 @@
         >
           <h1 class="text-4xl font-bold mb-2 underline" id="skill">Toolbox</h1>
           <p class="italic text-slate-800 pb-4">
-            Since im almost done with my bacholor degree in software
-            technologies, I've alot of tools available here are some of the
+            Since im almost done with my bacholors degree in software
+            technologies, I got alot of tools available here are some of the
             tools from my expanding toolbox
           </p>
           <div
@@ -469,7 +435,21 @@
               <div
                 class="mt-4 group-hover:opacity-0 transition-opacity duration-200 ease-out"
               >
-                <ion-icon class="text-4xl" name="cloud-done-outline"></ion-icon>
+                <object
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 32 32"
+                >
+                  <img
+                    class=""
+                    src="./images/svg/billede_2024-02-12_000834753.svg"
+                    alt=""
+                  />
+                </object>
+                <!--<ion-icon class="text-4xl" name="cloud-done-outline"></ion-icon>-->
               </div>
               <p
                 class="mt-4 absolute opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in text-center pt-4 align-middle"
@@ -493,8 +473,9 @@
               <p
                 class="mt-4 absolute opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in text-center pt-4 align-middle"
               >
-                Learning DevOps, i've learned that it is much more than
-                productivity, it's a workculture and how to improve that.
+                When learning about DevOps, i discovered that it is much more
+                than increasing productivity, it's also about workculture and
+                how to improve it.
               </p>
             </div>
           </div>
@@ -552,6 +533,8 @@
         window.matchMedia("(prefers-color-scheme: dark)").matches
       ) {
         // Dark mode is enabled
+        document.querySelector(".background").style.backgroundImage =
+          "url('./images/pretty_fjord-winter.jpg')";
         console.log("Dark mode is enabled");
       } else {
         // Dark mode is not enabled
