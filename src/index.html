@@ -34,7 +34,7 @@
     <div class="background bg-center">
       <div class="max-w-screen-xl mx-auto px-4 py-8">
         <a href="#contact">
-          <div class="h-20 pt-10">
+          <div class="h-40 pt-20">
             <p
               class="text-center bg-opacity-70 bg-gray-600 rounded text-gray-300"
             >
@@ -43,40 +43,50 @@
           </div>
         </a>
         <div class="h-20 pt-2">
-          <p
-            class="text-center bg-opacity-70 bg-gray-300 rounded text-red-600"
-          >
-            This website is still under contruct
+          <p class="text-center bg-opacity-70 bg-gray-300 rounded text-red-600">
+            This website is still under contruction
           </p>
         </div>
         <!-----------------------About--------------------------->
-        <div class="bg-gray-200 bg-opacity-70 rounded-lg p-4 mb-4 relative overflow-auto z-10 flex">
-          <div class="w-3/4">
-              <h1 class="text-4xl font-bold mb-2 underline" id="about">Hi!</h1>
-              <div>
-                  <p>
-                      Hi my name is Mikkel Weinreich Olsen, im 22 years old, and are
-                      studying a Bachelor of Engineering in Software Technologies in
-                      Odense Denmark where I've lived since the summer of 2021.
-                      <br><br>
-                      I started coding in Arduino during my stay at Sorø Gymnastikefterskole,
-                      and have been hooked ever since. Since then I've developed code for both 
-                      microcontrollers (Arduino) and serverside applications using Java with Spring Boot.
-                      In addition to that, I also have experience with frontend development using ReactJS.
-                      <br>
-                      My main focus right now is on backend development, but I'm always open for new challenges.
-                      <br><br>
-                      As mentioned earlier, I went to Sorø Gymnastikefterskole, which is a specialized gymnasium within gymnastics. I've done gymnastics for about 10 years but have retired!
-                      Now I'm currently taking a scuba diving license since that has been on my bucket list for years!
-                      I've also taken an interest in swimming and working out.
-                  </p>
-              </div>
+        <div
+          class="bg-gray-200 bg-opacity-70 rounded-lg p-4 mb-4 relative overflow-auto z-10 flex flex-col md:flex-row items-center"
+        >
+          <div class="md:w-1/4 md:pr-4 md:order-2">
+            <img
+              src="./images/profile_img.jpeg"
+              alt="profile_img"
+              class="rounded-full max-w-28 max-h-28 md:max-w-64 md:max-h-64"
+            />
           </div>
-          <div class="w-1/4 flex justify-center items-center">
-              <img src="./images/profile_img.jpeg" alt="profile_img" class="rounded-full max-w-64 max-h-64 mh-16">
+          <div class="md:w-3/4 md:order-1 md:pl-4">
+            <h1 class="text-4xl font-bold mb-2 underline" id="about">Hi!</h1>
+            <div>
+              <p>
+                Hi my name is Mikkel Weinreich Olsen, I'm 22 years old, and I'm
+                studying a Bachelor of Engineering in Software Technologies in
+                Odense, Denmark where I've lived since the summer of 2021.
+                <br /><br />
+                I started coding in Arduino during my stay at Sorø
+                Gymnastikefterskole, and have been hooked ever since. Since then
+                I've developed code for both microcontrollers (Arduino) and
+                server-side applications using Java with Spring Boot. In
+                addition to that, I also have experience with frontend
+                development using ReactJS.
+                <br />
+                My main focus right now is on backend development, but I'm
+                always open to new challenges.
+                <br /><br />
+                As mentioned earlier, I went to Sorø Gymnastikefterskole, which
+                is a specialized gymnasium within gymnastics. I've done
+                gymnastics for about 10 years, but have retired! Now I'm
+                currently taking a scuba diving license, since that has been on
+                my bucket list for years! I've also taken an interest in
+                swimming and working out.
+              </p>
+            </div>
           </div>
-      </div>
-      
+        </div>
+
         <!-----------------------Career-------------------------->
         <div
           class="bg-gray-200 bg-opacity-70 rounded-lg p-4 mb-4 relative overflow-auto z-10"
@@ -554,24 +564,5 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script>
-      window.onload = function() {
-        fetchImages()
-      }
-      //countImagesInFolder('./images');
-      // Check if dark mode is enabled using matchMedia
-      if (
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches
-      ) {
-        // Dark mode is enabled
-        document.querySelector(".background").style.backgroundImage =
-          "url('./images/pretty_fjord-winter.jpg')";
-        console.log("Dark mode is enabled");
-      } else {
-        // Dark mode is not enabled
-        console.log("Dark mode is not enabled");
-      }
-    </script>
   </body>
 </html>
