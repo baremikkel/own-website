@@ -2,7 +2,9 @@ FROM nginx:latest
 
 WORKDIR /usr/share/nginx/html
 
-COPY . .
+COPY tailwind.config.js .
+COPY /src .
+COPY nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 80
 
